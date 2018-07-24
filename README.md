@@ -5,10 +5,9 @@
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
-* [Contact](#contact)
+
 
 ## General info
 My project is memory game. My the biggest motivation is developing skills in JavaScript, jQuery, CSS and HTML. Besides, I used Klimt's paintings as he is an important artist for me. 
