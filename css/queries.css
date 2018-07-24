@@ -1,0 +1,143 @@
+@media screen and (max-width:768px) {
+    
+    .content h1 {
+        font-size: 250%;
+    }
+    
+    .btn {
+        font-size: 300%;
+        padding: 7px 15px;
+    }
+    
+    
+.btn-new {
+    transform: translate(-50%,-115%);
+    }
+    
+.btn-about {
+    transform: translate(-60%,-98%);
+}
+    
+.grid {
+    margin: 0 0 0 30px;
+}
+    
+.card,
+.back,
+.front{
+    height: 105px;
+    width: 105px;
+}
+
+#game {
+    padding: 80px 33px 90px 0;
+}
+    
+.content {
+    margin: 0 40px;
+}
+    
+img {
+    width: 80%;
+   
+    }
+}
+    
+@media only screen and (max-width: 480px) {
+
+    .content h1 {
+        font-size: 250%;
+        color: #f8f8f8;
+    }
+    
+    .btn-new, .btn-about {
+    width: 180px;
+    font-size: 80%;
+}
+    
+    
+    .btn-new {
+        transform: translate(-50%,-170%);
+        
+    }
+    .btn-about {
+        transform: translate(-55%,-128%);
+    }
+
+  /* SECTION GAME */  
+
+.section-game {
+    background-position: center;
+}
+    
+
+.card {
+    position: relative;
+    margin: 5px;
+  }
+  
+  .card,
+  .back,
+  .front {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+  }
+  
+  .back,
+  .front {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  
+  
+  .back {
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .selected {
+  }
+  .match .front {
+    opacity: 0;
+  }
+
+
+
+.card,
+.back,
+.front{
+    height: 53px;
+    width: 53px;   
+}
+
+
+/* SECTION KLIMT */
+
+.section-Klimt {
+    height: 100vh;        
+    }
+    
+h2 {
+        font-size: 200%;
+        text-align: center;
+        margin: 30px 0 45px 0;
+    }
+
+p {
+    margin-bottom: 50px;
+    font-size: 60%;
+}
+ 
+
+.container {
+    max-width: 200px;
+}
+
+img {
+    width: 100px;
+    margin: 0;
+}

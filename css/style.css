@@ -1,0 +1,277 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    background:#d5b34f;
+    font-family: 'Playfair Display', sans-serif; 
+}
+
+
+
+/*----- HEADINGS---------*/
+
+h1 {
+    font-size: 400%;
+    color: #e2e2e2;
+    margin-top: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-55%,-90%);
+    text-transform: uppercase;
+    background-attachment: fixed;
+    text-shadow: 0 0 300px #000000;
+    opacity: 0.91;
+    word-spacing: 15px;
+}
+
+
+h2 {
+  font-size: 250%;
+  color: #010101;
+  margin: 50px 0 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quote-title::before,
+.quote-title::after {
+    content: "";
+    display: block;
+    border: 2px solid #010101;
+    color: #010101;
+    width: 100px;
+    margin: 0 5px;
+}
+
+.quote-title {
+    display: flex;
+    align-items: center;
+    
+}
+
+/*-----BUTTONS---------*/
+
+
+.btn-new {
+     position: absolute;
+     top: 47%;
+     left: 50%;
+     transform: translate(-50%,-74%);
+}
+
+.btn-about {    
+     position: absolute;
+     top: 53%;
+     left: 53%;
+     transform: translate(-70%,-25%);
+}
+
+.btn-new,
+.btn-about {
+     width: 200px;
+     border-radius: 9px;
+     font-family: 'Oswald', sans-serif;
+     color: #716161;
+     font-size: 120%;
+     padding: 10px 20px;
+     border: 3px solid #fff;
+     text-transform: uppercase;
+     text-decoration: none;
+     margin-top: 50px;
+     opacity: 0.6;
+}
+
+
+
+.btn-new:hover,
+.btn-about:hover {
+    border: 3px solid #ffffff;
+    background-color: #cbcbcb;
+    font-weight: bold;
+    transition: font-weighy 0.3s;
+    
+}
+
+.btn-new a,
+.btn-about a{
+    text-decoration: none;
+    color: #716161;
+}
+
+
+/*-----------------------/
+/------Section-intro-----/
+/-----------------------*/
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url(img/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.content {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+/*------------------------/
+/------Section-game-------/
+/-----------------------*/
+
+.section-game {
+    background-image: url(img/background2.jpg);
+    background-size: cover; 
+}
+
+#game {
+    padding: 80px 0 90px 0;
+}
+
+.section-game h2 {
+    padding-top: 30px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*text-align: center;*/
+    color: #dbdbdb;
+    text-transform: uppercase;
+    background-attachment: fixed;
+    font-size: 100%;
+    display: none; 
+}
+
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.match {
+    opacity: 0;
+}
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+ background-image: url(img/front-card.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+.match .front {
+  opacity: 0;
+}
+
+.card:hover, .back:hover, .front:hover{
+-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 30px 0px rgba(207,181,59,0.8);
+}
+
+
+/*------------------------/
+/------Klimt-biography----/
+/-----------------------*/
+
+.section-Klimt {
+  margin: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    border: #977f38 solid 3px;
+    background-color: #645527;
+  }
+  
+  .main-img img,
+  .imgs img {
+    width: 100%;
+  }
+  
+  .imgs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+  }
+  
+  /* Fade in animation */
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+  }
+  
