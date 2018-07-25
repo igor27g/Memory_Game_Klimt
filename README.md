@@ -25,7 +25,7 @@ My project is memory game. My the biggest motivation is developing skills in Jav
 
 ## Setup
 Click in link and enjoy.
-https://igor27g.github.io/Memory-Game-Klimt/
+https://igor27g.github.io/Memory_Game_Klimt/
 
 To-do list:
 * Add pop-up after winning game 
