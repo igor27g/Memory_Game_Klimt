@@ -151,11 +151,9 @@ grid.addEventListener('click', function (event) {
     count++;
    if (count === 1) {
   firstGuess = clicked.parentNode.dataset.name;
-  console.log(firstGuess);
   clicked.parentNode.classList.add('selected');
 } else {
   secondGuess = clicked.parentNode.dataset.name;
-  console.log(secondGuess);
   clicked.parentNode.classList.add('selected');
 }
      if (firstGuess !== '' && secondGuess !== '') {
